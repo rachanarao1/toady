@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Virtual Machine Deployment</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Virtual Machine Deployment</h1>
-    <div class="dropdown-group">
-      <label for="vm-select">Select Virtual Machine:</label>
-      <select id="vm-select">
-        <option value="">-- Choose VM --</option>
-      </select>
-    </div>
-    <button id="deploy-btn" disabled>Deploy</button>
-    <div id="result"></div>
+<div class="container">
+  <h1>Golden Path</h1>
+  
+  <div class="dropdown-group">
+    <label for="infrastructure"><strong>Infrastructure</strong></label>
+    <select id="infrastructure" name="infrastructure">
+      <option value="" disabled selected>-- Select Infrastructure --</option>
+      <option value="ec2">EC2</option>
+      <option value="azure-vm">Azure VM</option>
+    </select>
   </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  
+  <button type="button" id="deployBtn">🚀 Deploy Selected</button>
+</div>
