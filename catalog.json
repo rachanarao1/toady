@@ -1,7 +1,7 @@
 [
   {
     "id": "ec2",
-    "name": "EC2",
+    "name": "AWS EC2",
     "description": "Deploys an AWS EC2 instance.",
     "category": "Virtual Machine",
     "terraform_module": "terraform-aws-modules/ec2-instance/aws"
