@@ -1,22 +1,20 @@
-const select = document.getElementById('vm-select');
-const runBtn = document.getElementById('run-btn');
+const vmSelect = document.getElementById('vm-select');
+const deployBtn = document.getElementById('deploy-btn');
 const resultDiv = document.getElementById('result');
 
-// Enable Run button only when a VM is selected
-select.addEventListener('change', () => {
-  runBtn.disabled = !select.value;
-  resultDiv.textContent = ''; // Clear result when changing selection
+// Enable Deploy button only when VM is selected
+vmSelect.addEventListener('change', () => {
+  deployBtn.disabled = !vmSelect.value;
+  resultDiv.textContent = '';
 });
 
-// On Run button click
-runBtn.addEventListener('click', () => {
-  const selected = select.options[select.selectedIndex].text;
-  if (!selected) {
-    resultDiv.textContent = 'Please select a VM type first.';
+deployBtn.addEventListener('click', () => {
+  const selectedVm = vmSelect.options[vmSelect.selectedIndex].text;
+  if (!selectedVm) {
+    resultDiv.textContent = 'Please select a VM to deploy.';
     return;
   }
-  // Simulate deployment action
-  resultDiv.textContent = `Deploying ${selected}...`;
+  resultDiv.textContent = `Deploying ${selectedVm}...`;
   
-  // Here you can add actual deploy logic or API calls
+  // Here you can add your deploy logic or API calls
 });

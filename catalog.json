@@ -1,6 +1,16 @@
-{
-  "vms": [
-    { "value": "ec2", "label": "EC2" },
-    { "value": "azure-vm", "label": "Azure VM" }
-  ]
-}
+[
+  {
+    "id": "ec2",
+    "name": "EC2",
+    "description": "Deploys an AWS EC2 instance.",
+    "category": "Virtual Machine",
+    "terraform_module": "terraform-aws-modules/ec2-instance/aws"
+  },
+  {
+    "id": "azure-vm",
+    "name": "Azure VM",
+    "description": "Deploys an Azure Virtual Machine.",
+    "category": "Virtual Machine",
+    "terraform_module": "terraform-azurerm-modules/virtual-machine/azure"
+  }
+]

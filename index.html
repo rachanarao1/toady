@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Virtual Machine Selector</title>
+  <title>Virtual Machine Deployment</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,12 +11,12 @@
 
   <label for="vm-select">Select VM Type:</label>
   <select id="vm-select">
-    <option value="" disabled selected>-- Choose an option --</option>
+    <option value="" disabled selected>-- Choose VM --</option>
     <option value="ec2">EC2</option>
     <option value="azure-vm">Azure VM</option>
   </select>
 
-  <button id="run-btn" disabled>Run</button>
+  <button id="deploy-btn" disabled>Deploy</button>
 
   <div id="result"></div>
 
