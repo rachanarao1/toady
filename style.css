@@ -1,39 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background-color: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 3.5rem;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 h1 {
-  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-label, select {
-  font-size: 1.2rem;
+.dropdown-group {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+label {
   display: block;
-  margin-top: 20px;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #e0e0e0;
 }
 
 select {
-  padding: 8px;
-  margin-top: 8px;
-  width: 220px;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 24px;
+  width: 100%;
+  padding: 0.6rem 1rem;
   font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+  appearance: none;
   cursor: pointer;
 }
 
+select:hover,
+select:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 12px rgba(255,255,255,0.3);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: #ff6a00;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255,106,0,0.4);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
 button:disabled {
+  background: #ffb380;
+  box-shadow: none;
   cursor: not-allowed;
-  opacity: 0.5;
+}
+
+button:not(:disabled):hover {
+  background: #e55b00;
+  box-shadow: 0 8px 16px rgba(229,91,0,0.6);
 }
 
 #result {
-  margin-top: 30px;
-  font-weight: bold;
-  color: #0066cc;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  min-height: 1.5em;
+  color: #ffd9b8;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
