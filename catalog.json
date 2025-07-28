@@ -1,0 +1,6 @@
+{
+  "vms": [
+    { "value": "ec2", "label": "EC2" },
+    { "value": "azure-vm", "label": "Azure VM" }
+  ]
+}
